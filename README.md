@@ -147,7 +147,7 @@ Guests can leave reviews and star ratings for properties they have booked. This 
 ### Payment Processing
 Payments are linked to bookings, ensuring secure transactions between guests and hosts. This feature manages payment statuses (pending, paid, refunded, failed) and ensures that bookings are only confirmed upon successful payment.
 
-## API SECURITY
+## API Security
 ### Authentication
 
 APIs will use secure authentication methods (e.g., JWT or OAuth 2.0) to verify user identities before granting access. This prevents unauthorized access and ensures that only registered users can interact with the system.
