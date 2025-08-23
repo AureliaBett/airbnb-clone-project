@@ -28,8 +28,9 @@ Test automation engineer: designs a test automation ecosystem
 
 DevOps Engineer: facilitates cooperation between develeopment and operations teams
 
-##Technology Stack
+## Technology Stack
 Django, MySQL, and GraphQL
+
 Django: a web framework for building RESTful APIs.
 
 My SQL: the relational database management system.
