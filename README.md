@@ -147,3 +147,23 @@ Guests can leave reviews and star ratings for properties they have booked. This 
 ### Payment Processing
 Payments are linked to bookings, ensuring secure transactions between guests and hosts. This feature manages payment statuses (pending, paid, refunded, failed) and ensures that bookings are only confirmed upon successful payment.
 
+## API SECURITY
+### Authentication
+
+APIs will use secure authentication methods (e.g., JWT or OAuth 2.0) to verify user identities before granting access. This prevents unauthorized access and ensures that only registered users can interact with the system.
+
+### Authorization
+
+Role-based access control (RBAC) will be enforced so that users can only perform actions relevant to their role (e.g., hosts managing properties, guests making bookings). This protects sensitive operations, such as editing property listings or processing payments.
+
+### Rate Limiting & Throttling
+
+API endpoints will have request limits to prevent abuse through brute-force attacks or denial-of-service (DoS) attempts. This ensures system stability and fair usage across all users.
+
+### Data Encryption
+
+All sensitive data, including login credentials and payment information, will be encrypted in transit (via HTTPS/TLS) and at rest where necessary. This helps protect user privacy and secures financial transactions.
+
+### Input Validation & Sanitization
+
+APIs will validate and sanitize incoming data to prevent injection attacks (e.g., SQL injection, XSS). This helps maintain the integrity of the system and prevents malicious code execution
