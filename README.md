@@ -131,3 +131,19 @@ rating (1–5 stars)
 comment (Text feedback)
 
 Notes: A review is linked to a Booking (ensures only verified guests review). A user (guest) writes the review, but it’s tied to both the property and the host indirectly.
+## Feature Breakdown
+### User Management
+The platform allows users to register, log in, and manage their profiles. Users can act as hosts (listing properties) or guests (booking stays), enabling flexibility in platform participation.
+
+### Property Management
+Hosts can list their properties with details such as title, location, price per night, and availability. This feature ensures that properties are discoverable and provides potential guests with enough information to make booking decisions.
+
+### Booking System
+Guests can book available properties by selecting check-in and check-out dates. The booking system prevents overlapping reservations and keeps track of booking status (pending, confirmed, canceled, completed).
+
+### Reviews and Ratings
+Guests can leave reviews and star ratings for properties they have booked. This fosters trust in the platform by helping future guests make informed decisions and encouraging hosts to maintain high standards.
+
+### Payment Processing
+Payments are linked to bookings, ensuring secure transactions between guests and hosts. This feature manages payment statuses (pending, paid, refunded, failed) and ensures that bookings are only confirmed upon successful payment.
+
