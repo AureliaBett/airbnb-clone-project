@@ -58,35 +58,46 @@ CI/CD Pipelines: Automated pipelines for testing and deploying code changes
 
 ## Database Design
 ### User 
-
 Fields:
 user_id (Primary Key, unique identifier)
+
 name (Full name of the user)
+
 email (Unique contact/login)
+
 role (e.g., "Host" or "Guest")
+
 created_at (Date joined)
 
 Notes: A User can be a Host (owns properties) or a Guest (makes bookings).
 One user account could technically do both.
 ### Property
-
 Fields
 property_id (Primary Key)
+
 owner_id (FK → User)
+
 title (Name of the property, e.g., "Cozy Apartment")
+
 location (Address or city)
+
 price_per_night (Rental cost)
 
 Notes: A property belongs to one User (Host).
 A user (host) can have many properties.
 ### Booking
-
 Fields
+
 booking_id (Primary Key)
+
 property_id (FK → Property)
+
 guest_id (FK → User)
+
 check_in (Start date)
+
 check_out (End date)
+
 status (Pending, Confirmed, Canceled, Completed)
 
 Notes
@@ -95,18 +106,28 @@ A booking belongs to one Property and one Guest. A property can have many bookin
 
 Fields
 payment_id (Primary Key)
+
 booking_id (FK → Booking)
+
 amount (Total cost paid)
+
 status (Pending, Paid, Refunded, Failed)
+
 payment_date (Timestamp of transaction)
 
 Notes: A payment belongs to one booking. A booking can only have one successful payment, but could have multiple attempts.
+
 ### Review
 Fields
+
 review_id (Primary Key)
+
 booking_id (FK → Booking)
+
 user_id (FK → User who wrote the review)
+
 rating (1–5 stars)
+
 comment (Text feedback)
 
 Notes: A review is linked to a Booking (ensures only verified guests review). A user (guest) writes the review, but it’s tied to both the property and the host indirectly.
