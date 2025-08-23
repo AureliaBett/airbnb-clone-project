@@ -167,3 +167,24 @@ All sensitive data, including login credentials and payment information, will be
 ### Input Validation & Sanitization
 
 APIs will validate and sanitize incoming data to prevent injection attacks (e.g., SQL injection, XSS). This helps maintain the integrity of the system and prevents malicious code execution
+
+## CI/CD Pipeline
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of building, testing, and deploying code. With CI/CD, every change pushed to the repository is automatically tested and, if successful, deployed to the staging or production environment.
+
+### Why is it Important?
+
+Faster Development: Automates repetitive tasks like building and testing so developers can focus on writing features.
+
+Improved Quality: Ensures that bugs are caught early through automated testing.
+
+Consistency & Reliability: Reduces manual deployment errors by providing a standardized process.
+
+Faster Feedback: Developers get immediate feedback on whether their changes work as expected.
+
+### Tools for Implementation
+
+GitHub Actions → Automates build, test, and deployment workflows directly within GitHub.
+
+Docker → Provides containerized environments for consistent deployments across machines.
+
+Jenkins / GitLab CI → Alternatives that can handle complex pipelines for larger projects.
